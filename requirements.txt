@@ -1,11 +1,28 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-transformers==4.46.0
-torch==2.5.1
-vaderSentiment==3.3.2
-textblob==0.17.1
-python-multipart==0.0.6
+# fastapi==0.104.1
+# uvicorn[standard]==0.24.0
+# transformers==4.46.0
+# torch==2.5.1
+# vaderSentiment==3.3.2
+# textblob==0.17.1
+# python-multipart==0.0.6
+# pydantic==2.10.3
+# numpy>=1.24.0
+# huggingface-hub>=0.20.0
+# python-dotenv==1.0.0
+
+# requirements.txt - OPTIMIZED FOR LOW MEMORY
+fastapi==0.115.5
+uvicorn==0.32.1
 pydantic==2.10.3
-numpy>=1.24.0
-huggingface-hub>=0.20.0
-python-dotenv==1.0.0
+python-multipart==0.0.20
+
+# Transformers with MINIMAL dependencies
+transformers==4.46.3
+torch==2.5.1
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+# Only essential dependencies
+numpy==1.26.4
+requests==2.32.3
+
+# No heavy dependencies like tensorflow, scipy, etc.
