@@ -37,8 +37,20 @@
 # numpy==1.26.4
 # requests==2.32.3
 
+# fastapi
+# uvicorn[standard]
+# transformers
+# torch
+# pydantic
+
 fastapi
 uvicorn[standard]
 transformers
 torch
+tensorflow
+librosa
+soundfile
 pydantic
+python-multipart
+huggingface_hub
+numpy
